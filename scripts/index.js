@@ -24,16 +24,17 @@ const scraper = async (keyword) => {
 
   console.log(jobsData);
 
-  // npm run server in another terminal for this to work
-  jobsData.forEach(async (job) => {
-    await fetch("http://localhost:8000/linkedInJobs", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(job),
-    });
-  });
+  // //NOTE still need to check if a job already exists in the json.db before adding new ones otherwise the data will be dublicated
+  // // npm run server in another terminal for this to work
+  // jobsData.forEach(async (job) => {
+  //   await fetch("http://localhost:8000/linkedInJobs", {
+  //     method: "POST",
+  //     headers: {
+  //       "Content-Type": "application/json",
+  //     },
+  //     body: JSON.stringify(job),
+  //   });
+  // });
 
   // //saves a screenshot of the page
   // await page.screenshot({
