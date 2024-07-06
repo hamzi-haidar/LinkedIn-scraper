@@ -35,9 +35,10 @@ const scraper = async (keyword) => {
     });
   });
 
-  await page.screenshot({
-    path: "linkedIn.png",
-  });
+  // //saves a screenshot of the page
+  // await page.screenshot({
+  //   path: "linkedIn.png",
+  // });
 
   await browser.close();
 };

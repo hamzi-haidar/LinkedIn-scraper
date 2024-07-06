@@ -6,7 +6,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node scripts/index.js",
-    "server": "json-server --watch db.json --port 8000"
+    "server": "json-server --watch data/db.json --port 8000"
   },
   "keywords": [],
   "author": "",
